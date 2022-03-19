@@ -25,3 +25,20 @@
   position: sticky;
 }
 
+#about-section{
+  align-items: center;
+  padding:5%
+}
+
+.heading2{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card{
+  padding:2%;
+  background-color: black;
+}
+.card-body{
+  color:aliceblue;
+}
