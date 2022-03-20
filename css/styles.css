@@ -4,19 +4,22 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
+  height: 70vh;
   width: 100%;
 }
 
 .blur {
   background: rgba(14, 22, 27, 0.2); 
   backdrop-filter: blur(6px);
-  height: 100vh;
+  height: 70vh;
 	width: 100%;
 }
-
+.heading1{
+  font-family: Trattatello, fantasy;
+  font-size: 400%;
+}
 #intro-section{
-  color:white;
+  color: rgb(4, 0, 5);
   text-align: center;
   font-size: x-large;
   font-weight: 400;
@@ -39,14 +42,21 @@
 }
 #menu{
   background-color: black;
+  margin-bottom:30px;
 }
 #menu h2 {
   color: antiquewhite;
 }
 .card{
   padding:2%;
-  background-color: black;
+  background-color: black ;
 }
 .card-body{
   color:aliceblue;
+}
+#order-section{
+  background-color: rgba(0,0,0,.5);
+    color: #fff;
+  padding-top: 2%;
+  padding-bottom: 3%;
 }
