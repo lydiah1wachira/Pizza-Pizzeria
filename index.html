@@ -9,12 +9,37 @@
     <title>Pizza Pizzeria</title>
   </head>
   <body>
+   
     <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg sticky-top navbar-dark  bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link" href="#">Features</a>
+            <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link disabled" href="#">Disabled</a>
+          </div>
+        </div>
+      </nav>
       <div class="background">
         <div class="blur">
           <div id="intro-section">
             <h1 class="heading1">Fat Angry Pete’s Pizzeria</h1>
-            <p>IN CRUST WE TRUST</p>
+            <p>IN PIZZA WE CRUST</p>
           </div>
         </div>
       </div>
@@ -28,7 +53,8 @@
         </div>
         <div class="col-md-6" id="about-text">
           <p>
-            <strong>Pizza Pizzeria</strong> is the best pizza spot in Nairobi.
+            <strong>Fat Angry Pete’s Pizzeria</strong> is the best pizza spot in
+            Nairobi.
           </p>
           <p>
             We have been in business for over 20 years and we offer a variety of
@@ -130,8 +156,8 @@
                 </select>
                 <label for="crust">Pizza Crust:</label>
                 <select class="form-select" id="crust" required>
-                  <option value="gluten free">Gluten Free @ksh 100</option>
-                  <option value="hand tossed">Hand Tossed @ksh 200</option>
+                  <option value="glutenfree">Gluten Free @ksh 200</option>
+                  <option value="Flatbread">Flat bread @ksh 100</option>
                   <option value="stuffed">Stuffed @ksh 150</option>
                   <option value="thin">Thin @ksh 50</option>
                 </select>
@@ -143,7 +169,7 @@
                   <option value="parmesan cheese">parmesan cheese</option>
                   <option value="bacon">Bacon</option>
                 </select>
-                
+
                 <span class="btn btn-primary" id="add-order">Add Another</span>
 
                 <button type="submit" class="btn btn-danger">Order</button>
@@ -154,13 +180,15 @@
           </div>
         </div>
         <!-- contact section and contains email for feedback, also the footer containing social media icons -->
-        <footer>
-
-        </footer>
+        <footer></footer>
         <!--End of contact section and footer-->
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/scripts.js"></script>
   </body>
 </html>
