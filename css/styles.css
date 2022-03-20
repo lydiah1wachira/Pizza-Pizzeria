@@ -29,12 +29,20 @@
   align-items: center;
   padding:5%
 }
-
+#pizza-gif{
+  justify-content: center;
+}
 .heading2{
+  padding-top: 2%;
   text-align: center;
   padding-bottom: 20px;
 }
-
+#menu{
+  background-color: black;
+}
+#menu h2 {
+  color: antiquewhite;
+}
 .card{
   padding:2%;
   background-color: black;
