@@ -9,32 +9,30 @@
     <title>Pizza Pizzeria</title>
   </head>
   <body>
-   
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg sticky-top navbar-dark  bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
-            <a class="nav-item nav-link disabled" href="#">Disabled</a>
-          </div>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Fat Angry Pete’s Pizzeria</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#intro-section">Home</a>
+          <a class="nav-item nav-link" href="#about-section">About</a>
+          <a class="nav-item nav-link" href="#menu">Menu</a>
+          <a class="nav-item nav-link" href="#order-section">Order</a>
+          <a class="nav-item nav-link" href="#contacts">Contacts</a>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <div class="container-fluid">
       <div class="background">
         <div class="blur">
           <div id="intro-section">
@@ -138,7 +136,7 @@
           <h2 class="heading2">ORDER</h2>
           <div class="row">
             <div class="col-md-6">
-              <form id="orders">
+              <form id="orders_form">
                 <label for="flavor">Pick a pizza Flavor:</label>
                 <select class="form-select" id="flavor" required>
                   <option value="pepperoni">Pepperoni</option>
@@ -150,14 +148,14 @@
                 </select>
                 <label for="size">Choose your preferred Size:</label>
                 <select class="form-select" id="size" required>
-                  <option value="small">Small for ksh 700</option>
-                  <option value="medium">Medium for ksh 900</option>
-                  <option value="large">Large for ksh 1150</option>
+                  <option value="small">Small for ksh 500</option>
+                  <option value="medium">Medium for ksh 700</option>
+                  <option value="large">Large for ksh 950</option>
                 </select>
                 <label for="crust">Pizza Crust:</label>
                 <select class="form-select" id="crust" required>
                   <option value="glutenfree">Gluten Free @ksh 200</option>
-                  <option value="Flatbread">Flat bread @ksh 100</option>
+                  <option value="flatbread">Flat bread @ksh 100</option>
                   <option value="stuffed">Stuffed @ksh 150</option>
                   <option value="thin">Thin @ksh 50</option>
                 </select>
@@ -170,18 +168,24 @@
                   <option value="bacon">Bacon</option>
                 </select>
 
-                <span class="btn btn-primary" id="add-order">Add Another</span>
+              
 
-                <button type="submit" class="btn btn-danger">Order</button>
+                <button type="submit" id="submit-btn" class="btn btn-danger">Add to cart</button>
               </form>
             </div>
-            <!--Empty div, where the order summary will be outputted-->
-            <div class="col-md-6"></div>
+          
+            <div class="col-md-6" id="order_summary"></div>
           </div>
+
         </div>
-        <!-- contact section and contains email for feedback, also the footer containing social media icons -->
-        <footer></footer>
-        <!--End of contact section and footer-->
+
+        <div id="contacts">
+          <footer>
+            <h2 class="heading2">CONTACTS</h2>
+            <p>Email us at: averacadavra@gmail.com</p>
+            <p>mobile : +254798123456</p>
+          </footer>
+        </div>
       </div>
     </div>
     <script
