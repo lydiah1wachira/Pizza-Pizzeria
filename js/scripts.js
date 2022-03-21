@@ -81,7 +81,7 @@ submitButton.addEventListener("click", e =>{
 
 
  
- const totalOrder = sumArray(orders.map((ordr) => sumArray(Object.values(ordr))))
+ const totalOrder = sumArray(orders.map((ordr) => sumArray(Object.values(ordr)))) 
 
   const summaryDiv = document.createElement("div")
   summaryDiv.className = "d-flex justify-content-between align-items-center"
