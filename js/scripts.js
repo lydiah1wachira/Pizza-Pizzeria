@@ -1,6 +1,9 @@
 //back-end logic//
-const SubmitButton = documents.getElementById('submit-btn')
-const summary = document.getElementsById('order_summary')
+
+
+const submitButton = document.getElementById('submit-btn')
+const summary = document.getElementById('order_summary')
+
 
 const pizzaOrder = {
   size: {
@@ -19,7 +22,6 @@ const pizzaOrder = {
   toppings: 100,
   
 }
-
 
 
 const sumArray = (arr) => {
@@ -105,7 +107,7 @@ submitButton.addEventListener("click", e =>{
     deliveryStatementDiv.setAttribute('content', 'delivery?')
     deliveryStatementDiv.className = "btn btn-primary"
     deliveryStatementDiv.innerHTML = "Delivery ?"
-    wrapper.appendChild( deliveryStatementDiv)
+   
 
     const confirmAction = confirm("Would you like this order to be delivered?")
 
@@ -114,7 +116,7 @@ submitButton.addEventListener("click", e =>{
       const message = "Your order amount is " + totalOrder + " and will delivered to " + location
       alert(message)
     }else{
-
+      alert("Your order will be ready for pick-up in 15 minutes.")
     }
   })
 
