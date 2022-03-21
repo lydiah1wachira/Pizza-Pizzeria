@@ -28,6 +28,7 @@ You can order more than one pizza and you get the summary of your total. On chec
 ## Known Bugs
 
 file is not fully responsive.
+there is no button to add another, clicking the add to cart button again makes the second order.
 
 ## Technologies Used
 
