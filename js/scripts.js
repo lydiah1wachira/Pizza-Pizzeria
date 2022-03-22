@@ -113,7 +113,8 @@ submitButton.addEventListener("click", e =>{
 
     if(confirmAction){
       const location = prompt("Enter Location for delivery")
-      const message = "Your order amount is " + totalOrder + " and will delivered to " + location
+      let finalOrder = totalOrder + 200
+      const message = "Your order amount is ksh" + finalOrder +  " and will delivered to " + location
       alert(message)
     }else{
       alert("Your order will be ready for pick-up in 15 minutes.")
