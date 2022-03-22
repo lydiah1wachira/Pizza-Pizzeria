@@ -117,7 +117,7 @@ submitButton.addEventListener("click", e =>{
       const message = "Your order amount is ksh" + finalOrder +  " and will delivered to " + location
       alert(message)
     }else{
-      alert("Your order will be ready for pick-up in 15 minutes.")
+      alert("Your order is ksh " + totalOrder + " and be ready for pick-up in 15 minutes.")
     }
   })
 
