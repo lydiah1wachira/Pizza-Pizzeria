@@ -109,7 +109,7 @@ submitButton.addEventListener("click", e =>{
     deliveryStatementDiv.innerHTML = "Delivery ?"
    
 
-    const confirmAction = confirm("Would you like this order to be delivered?")
+    const confirmAction = confirm("Would you like this order to be delivered? for ksh 200")
 
     if(confirmAction){
       const location = prompt("Enter Location for delivery")
